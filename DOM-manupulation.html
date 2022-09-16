@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-manupulation</title>
+</head>
+<body>
+    <div id="first">
+        <p>
+            this is first paragraph in division1
+        </p>
+        <p>
+            this is second paragraph in division1
+        </p>
+    </div>
+    <div id="second">
+        <p>
+            this is firt paragraph in division2
+        </p>
+        <p>
+            this is second paragraph in division2
+        </p>
+    </div>
+
+    <script>
+        var n= document.createElement('p')
+        n.innerText="this is third paragraph in division2"
+        console.log(n)
+        var parent=document.getElementById("second")
+        console.log(parent)
+
+        parent.appendChild(n)
+        
+    </script>
+    
+</body>
+</html>

@@ -111,9 +111,294 @@
 // console.log(radius);
 
 
-let animal='tiger';
-function animalwatch(){
-    let animal="lion";
+// let animal='tiger';
+// function animalwatch(){
+//     let animal="lion";
     
-}
-console.log("animal");
+// }
+// console.log("animal");
+
+
+// function test(){
+//     console.log(y)
+//     var x=y+10;
+// }
+// var y=10;
+// test()
+
+
+// function test(){
+//     console.log(y)
+//     var x=y=10
+// }
+// var y=10;
+// test()
+// {
+//     console.log(y)
+// }
+
+
+// function test(){
+//     console.log(y)
+//     var x=y+10;
+
+// }
+// let y=10;
+// const num=83;
+// test()
+// {
+//     num=+
+//     console.log(num)
+// }
+
+
+
+// function test(){
+//     var x=10;
+//     console.log(x)
+// }
+// var x=10;
+// test()
+
+
+// let x=1;
+// function outer(){
+//     console.log("x",x)
+//     console.log("y",y)
+//     let z=10;
+//     function inner(){
+//         let z=20;
+//         console.log("z",z)
+//     }
+//     inner()
+// }
+// let y=10;
+// outer()
+
+
+
+// let x=1;
+// let z=300;
+// function outer(){
+//     console.log("x",x)
+//     console.log("y",y)
+   
+//     function inner(){
+//        // let z=20;
+//         console.log("z",z)
+
+//     }
+//     inner()
+// }
+// let y=10;
+// outer()
+
+
+
+// let x=1;
+
+// function outer(){
+//     console.log("x",x)
+//     console.log("y",y)
+//     console.log("z",z)
+//     function inner(){
+//         let z=10;
+//     }
+//     inner()
+//     }
+//     let y=10;
+//     outer()
+
+
+
+
+// function add(x,y){
+//     return x+y
+// }
+
+
+// const add=function(x,y){
+//     return x+y;
+// }
+
+
+// const square=function(num){
+//     return num*num;
+// }
+
+
+
+// function first(fun){
+//     fun()
+// }
+// function second(){
+//     console.log("this is a second function")
+// }
+// first(second)
+
+
+
+// function first(fun){
+//     console.log(fun)
+//     fun()
+// }
+// function second(){
+//     console.log("this is second function")
+// }
+// //let second=20;
+// var second=30;
+// first(second)
+
+
+
+// var arr=[2,3,4,5,6]
+// function squares(arr){
+//     squares=[]
+//     for(ele of arr){
+//         let res=ele*ele;
+//         squares.push(res)
+//     }
+//     console.log(squares)
+// }
+// squares(arr)
+
+
+// function cubes(arr){
+//     cubes=[]
+//     for (ele of arr){
+//         let res=ele*ele*ele;
+//         cubes.push(res)
+
+//     }
+//     console.log(cubes)
+// }
+// cubes(arr)
+
+
+
+// function first(){
+//     return second
+// }
+// function second(){
+//     console.log("this is second function")
+// }
+// let res=first()
+// res()
+
+
+
+//console.log(this)
+
+// var a=10;
+// console.log(this)
+// console.log(window.a)
+// console.log(a)
+// console.log(this.a)
+// var ab ={
+//     name:"divya"
+// }
+// console.log(this.ab)
+
+
+
+
+// var a=10;
+// function add(){
+//     console.log(this.a)
+//     console.log(window.a)
+// }
+// add()
+
+
+// var a=10;
+// var movie={
+//     name:"sita-ramam",
+//     getName:function(){
+//         console.log(this)
+//     }
+// }
+// movie.getName()
+
+
+
+// try{
+//     console.log("line1")
+//     console.log(line2)
+//     console.log("line3")
+// }
+// catch(error){
+//     console.log(error)
+//     console.log(error.name)
+//     console.log(error.message)
+// }
+// console.log("line4")
+
+
+// try{
+//     console.log("line1")
+//     console.log("line2")
+//     console.log("inside in try")
+// }
+// catch(error){
+//     console.log(error)
+//     console.log('inside catch')
+// }
+// console.log("line4")
+
+
+
+//let x=20;
+// let x=10;
+// console.log("line1")
+// if(x<15){
+//     throw "x must be greater than 15"
+//     console.log("xyz")
+// }
+// console.log("hello")
+
+
+
+
+// function test(a){
+//     //console.log(a())
+//     a()
+// }
+// test (function(){
+//     console.log("call back function")
+
+// })
+
+
+
+
+// function first(test){
+//     console.log(test())
+//     console.log("this is the first function")
+// }
+// function second(){
+//     console.log("this is the second function")
+// }
+// first(second)
+// second()
+
+
+
+// function add(a,b){
+//     console.log(a+b)
+// }
+// function product(a,b){
+//     console.log(a*b)
+// }
+// function calculator(val1,val2,operation){ 
+//     operation(val1,val2)
+// }
+// calculator(2,3,add)
+// calculator(2,3,product)
+
+
+
+arr=[1,2,3,4,5]
+var res=arr.map(function(ele,index,arr){
+    return ele*ele
+})
+console.log(res)
