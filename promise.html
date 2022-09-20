@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let p= new Promise(
+        // function data(){
+
+        // }
+        // )
+        // console.log(p)
+
+        let p=new Promise(
+            function(sucess,error){
+                let datacame=true
+                if(datacame){
+                    sucess([1,2,3])
+                }
+                else
+                error("not ok")
+
+
+
+
+                
+            }
+        )
+        p.then(function(data){
+            console.log(data)
+        })
+        p.catch(function(errordata){})
+        
+    </script>
+    
+</body>
+</html> 

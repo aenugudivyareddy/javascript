@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+</head>
+<body>
+    <!-- <h1>Event-Basics</h1>
+    <button onclick="alert('you just clicked me')">click me</button>
+   <button id="v2">just open</button>
+    -->
+
+    
+    <div id="special">
+        Name:<input id="sp" type="text"/><br>
+        <br>
+        <!--<button id="b1" onclick="document.body.style.backgroundColor='green'">change background</button>-->
+        <button id="b1" onclick="change();">change bacgrond</button>
+    </div>
+    <script>
+        function change(){ 
+            var letters='0123456789ABCDEF';
+            var color="#";
+            for (var i=0;i<6;i++){
+                var r=Math.floor(Math.random()*16);
+                color=color+letters[r]
+            }
+            document.body.style.backgroundColor='color'
+        }
+    </script>
+</body>
+</html>

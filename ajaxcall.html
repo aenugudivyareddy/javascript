@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button  id="b1" type="submit"> Click Get Data  </button>
+        <div id="t1" class="getDt"></div>
+    </div>
+
+
+    <script>
+        var btn = document.getElementById('b1');
+
+        var txt = document.getElementById('t1');
+
+        btn.addEventListener('click', loadData);
+
+
+function   loadData(){
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'sampletext.txt' , true );
+
+        xhr.send();
+        
+        xhr.onprogress = function(){
+            txt.innerHTML = "loading Data............!"
+        }
+
+
+        xhr.onload  = function(){
+            txt.innerHTML = xhr.responseText;
+        }
+
+        }
+    </script>
+
+</body>
+</html>

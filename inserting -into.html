@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulation</title>
+</head>
+<body>
+    <div id="firs">
+        <p>this is first paragraph</p>
+        <p>this is second pararaph</p>
+    </div>
+    <div id="'second">
+        <p>this is first in para</p>
+        <p id="last">this is second in para</p>
+    </div>
+    <script>
+        var n= document.createElement("p")
+        n.innerText="this is special para in div2"
+        var parent=document.getElementById("second")
+        var last=document.getElementById("last")
+        parent.insertBefore(n,last)
+    </script>
+    
+</body>
+</html>

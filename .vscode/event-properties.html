@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event properties</title>
+</head>
+<body>
+    <!-- <div id="lock">
+        name:<input id="lck" type="text"><br><br>
+        <button id="b1">change background</button>
+    </div>
+    <script>
+        // let btn=document.getElementById('b1')
+        // btn.onclick=change;
+        // function change(){
+        // document.body.style.backgroundColor="pink"
+        // }
+
+        // let btn=document.getElementById("b1")
+        // btn.onclick=function(){
+        //     document.body.style.backgroundColor='yellow'
+        // }
+
+        let btn=document.getElementById('b1')
+        btn.addEventListener("click",function(){
+            document.body.style.backgroundColor='orange'
+        })
+        // function change(){
+        //     document.body.style.backgroundColor="purple"
+        // }
+    </script> -->
+
+
+    <div id="lock">
+        name:<input id="entername" type="text"><br><br>
+        <button id="b1">changebackground</button>
+    </div>
+    <script>
+        let fn=document.getElementById("entername")
+        fn.addEventListener("focus",change)
+        function change(){
+            console.log("this")
+            fn.style.backgroundColor='blue'
+        }
+    </script>
+</body>
+</html>
